@@ -1,0 +1,340 @@
+{
+  "form_id": "worklog_v1",
+  "title": "설비 일일 점검표",
+  "version": 1,
+  "dpi": 200,
+  "size": [
+    1654,
+    2339
+  ],
+  "template": "templates/worklog_v1.png",
+  "box_format": "[x, y, w, h] px, 템플릿 이미지 기준",
+  "markers": [
+    [
+      60,
+      60,
+      60,
+      60
+    ],
+    [
+      1534,
+      60,
+      60,
+      60
+    ],
+    [
+      60,
+      2219,
+      60,
+      60
+    ],
+    [
+      1534,
+      2219,
+      60,
+      60
+    ]
+  ],
+  "fields": [
+    {
+      "id": "date_year",
+      "label": "연도",
+      "type": "number",
+      "box": [
+        350,
+        290,
+        170,
+        70
+      ],
+      "valid": [
+        2020,
+        2035
+      ]
+    },
+    {
+      "id": "date_month",
+      "label": "월",
+      "type": "number",
+      "box": [
+        594,
+        290,
+        100,
+        70
+      ],
+      "valid": [
+        1,
+        12
+      ]
+    },
+    {
+      "id": "date_day",
+      "label": "일",
+      "type": "number",
+      "box": [
+        768,
+        290,
+        100,
+        70
+      ],
+      "valid": [
+        1,
+        31
+      ]
+    },
+    {
+      "id": "worker_name",
+      "label": "작업자",
+      "type": "text",
+      "box": [
+        350,
+        400,
+        420,
+        70
+      ]
+    },
+    {
+      "id": "equipment_id",
+      "label": "설비번호",
+      "type": "text",
+      "box": [
+        1080,
+        400,
+        424,
+        70
+      ],
+      "example": "CNC-03"
+    },
+    {
+      "id": "shift",
+      "label": "근무조",
+      "type": "choice",
+      "options": {
+        "주간": [
+          430,
+          523,
+          44,
+          44
+        ],
+        "야간": [
+          624,
+          523,
+          44,
+          44
+        ]
+      }
+    },
+    {
+      "id": "m_temp",
+      "label": "온도",
+      "type": "number",
+      "box": [
+        1110,
+        780,
+        384,
+        65
+      ],
+      "unit": "℃",
+      "normal": [
+        20,
+        60
+      ]
+    },
+    {
+      "id": "m_pressure",
+      "label": "압력",
+      "type": "number",
+      "box": [
+        1110,
+        865,
+        384,
+        65
+      ],
+      "unit": "bar",
+      "normal": [
+        4.0,
+        6.0
+      ]
+    },
+    {
+      "id": "m_vibration",
+      "label": "진동",
+      "type": "number",
+      "box": [
+        1110,
+        950,
+        384,
+        65
+      ],
+      "unit": "mm/s",
+      "normal": [
+        0,
+        4.5
+      ]
+    },
+    {
+      "id": "m_noise",
+      "label": "소음",
+      "type": "number",
+      "box": [
+        1110,
+        1035,
+        384,
+        65
+      ],
+      "unit": "dB",
+      "normal": [
+        0,
+        85
+      ]
+    },
+    {
+      "id": "m_runtime",
+      "label": "가동시간",
+      "type": "number",
+      "box": [
+        1110,
+        1120,
+        384,
+        65
+      ],
+      "unit": "h",
+      "normal": [
+        0,
+        24
+      ]
+    },
+    {
+      "id": "chk_lubricant",
+      "label": "윤활유 수준 적정",
+      "type": "choice",
+      "options": {
+        "양호": [
+          1179,
+          1383,
+          44,
+          44
+        ],
+        "불량": [
+          1381,
+          1383,
+          44,
+          44
+        ]
+      },
+      "normal": "양호"
+    },
+    {
+      "id": "chk_cover",
+      "label": "안전커버 체결 상태",
+      "type": "choice",
+      "options": {
+        "양호": [
+          1179,
+          1463,
+          44,
+          44
+        ],
+        "불량": [
+          1381,
+          1463,
+          44,
+          44
+        ]
+      },
+      "normal": "양호"
+    },
+    {
+      "id": "chk_estop",
+      "label": "비상정지 버튼 작동",
+      "type": "choice",
+      "options": {
+        "양호": [
+          1179,
+          1543,
+          44,
+          44
+        ],
+        "불량": [
+          1381,
+          1543,
+          44,
+          44
+        ]
+      },
+      "normal": "양호"
+    },
+    {
+      "id": "chk_housekeeping",
+      "label": "작업장 주변 정리정돈",
+      "type": "choice",
+      "options": {
+        "양호": [
+          1179,
+          1623,
+          44,
+          44
+        ],
+        "불량": [
+          1381,
+          1623,
+          44,
+          44
+        ]
+      },
+      "normal": "양호"
+    },
+    {
+      "id": "chk_abnormal",
+      "label": "이상 소음·냄새 없음",
+      "type": "choice",
+      "options": {
+        "양호": [
+          1179,
+          1703,
+          44,
+          44
+        ],
+        "불량": [
+          1381,
+          1703,
+          44,
+          44
+        ]
+      },
+      "normal": "양호"
+    },
+    {
+      "id": "remarks",
+      "label": "특이사항",
+      "type": "freetext",
+      "box": [
+        156,
+        1866,
+        1342,
+        218
+      ]
+    },
+    {
+      "id": "sign_worker",
+      "label": "작업자 서명",
+      "type": "signature",
+      "box": [
+        350,
+        2120,
+        420,
+        110
+      ]
+    },
+    {
+      "id": "sign_manager",
+      "label": "관리자 확인",
+      "type": "signature",
+      "box": [
+        1080,
+        2120,
+        424,
+        110
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+
+# 원본 사진·스캔 (Git 금지 - 정답 텍스트는 labels/ 에 커밋)
+data/
+
+# 실행 결과
+outputs/
+
+# 모델
+*.pt
+*.pth
+*.onnx
+*.engine
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 환경설정 (OCR API 키 등)
+.env

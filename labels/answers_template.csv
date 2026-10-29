@@ -1,0 +1,1 @@
+﻿sample_id,writer_id,date_year,date_month,date_day,worker_name,equipment_id,shift,m_temp,m_pressure,m_vibration,m_noise,m_runtime,chk_lubricant,chk_cover,chk_estop,chk_housekeeping,chk_abnormal,remarks,sign_worker,sign_manager
