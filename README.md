@@ -14,7 +14,8 @@
 ## 시작하기
 
 ```bash
-cd ~/ai_vision/handnote-digitizer
+git clone https://github.com/wlgptjd333/handnote-digitizer.git
+cd handnote-digitizer
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
